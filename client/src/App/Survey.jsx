@@ -26,6 +26,7 @@ class Survey extends Component {
     return (
       <div>
         <h1>Survey</h1>
+        <legend>This survey will help you to choose a course that fits you!</legend>
         <div>{mapToComponents(this.state.surveyData)}</div>
       </div>
     )

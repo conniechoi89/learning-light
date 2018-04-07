@@ -8,7 +8,9 @@ class SurveyInfo extends Component {
   render() {
     var survey = require('./Survey');
     return (
-      <div>{this.props.survey.question}{this.props.survey.answer}</div>
+      <div className="card-body">
+        <div>{this.props.survey.question}{this.props.survey.answer}</div>
+      </div>
     )
   }
 };
