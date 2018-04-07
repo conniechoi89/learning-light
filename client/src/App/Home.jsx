@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Loading from '../Loading';
 import ReactDOM from 'react-dom';
 import StarRatingComponent from 'react-star-rating-component';
+// import Popup from 'react-popup';
 
 
 class Home extends Component {

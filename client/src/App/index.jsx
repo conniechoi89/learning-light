@@ -12,6 +12,8 @@ import makeService from '../userService';
 import Login from './Login';
 import Logout from './Logout';
 import Register from './Register';
+import Survey from './Survey';
+import SurveyInfo from './SurveyInfo';
 import Profile from './Profile';
 import CourseContainer from './CourseContainer';
 import CourseCompleted from './CourseCompleted';
@@ -82,6 +84,14 @@ class App extends Component {
               render={({ history }) => (<Register
                 onLogin={this.onLogin}
                 register={this.service.register}
+                history={history}
+              />)}
+              />
+              <Route
+              path="/survey"
+              render={({ history }) => (<Survey
+                onLogin={this.onLogin}
+                register={this.service.survey}
                 history={history}
               />)}
              />

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Survey from './Survey';
+// import Popup from 'react-popup';
 
 function Register({ onLogin, register, history }) {
   const onSubmit = (e) => {
@@ -11,10 +13,11 @@ function Register({ onLogin, register, history }) {
     const motivation = e.target.elements.motivation.value;
     const password = e.target.elements.password.value;
     const passwordConfirm = e.target.elements.passwordConfirm.value;
+    
     register(first_name, last_name, email, location, motivation, password, passwordConfirm)
       .then((data) => {
         onLogin(data.jwt);
-        history.push('/');
+        history.push('/survey');
       });
   };
 
